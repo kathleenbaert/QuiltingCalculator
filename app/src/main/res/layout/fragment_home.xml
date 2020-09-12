@@ -28,6 +28,50 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Quilt Dimensions:"
+                    android:textStyle="bold"
+                    android:textSize="18sp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <EditText
+                        android:id="@+id/DimensionsWidth"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:inputType="number"
+                        android:hint="width" />
+
+
+                    <EditText
+                        android:id="@+id/DimensionsHeight"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".5"
+                        android:inputType="number"
+                        android:hint="height" />
+
+                    <Button
+                        android:id="@+id/calculateDimensions"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="Calculate" />
+
+                </LinearLayout>
+
+
+                <TextView
+                    android:id="@+id/calculatedDimensions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculated Dimensions: " />
 
                 <TextView
                     android:id="@+id/QuiltConstruction"
