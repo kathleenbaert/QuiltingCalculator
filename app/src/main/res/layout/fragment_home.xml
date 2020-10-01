@@ -168,8 +168,8 @@
                     <TextView
                         android:layout_width="120dp"
                         android:layout_height="wrap_content"
-                        android:text="Borders:"
-                        android:gravity="right" />
+                        android:gravity="right"
+                        android:text="Borders:" />
 
 
                     <EditText
@@ -183,6 +183,133 @@
                         android:gravity="right"/>
 
                 </LinearLayout>
+
+                <TextView
+                    android:id="@+id/Quilting"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Quilting:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_EdgeToEdge"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Edge To Edge Design" />
+
+                <CheckBox
+                    android:id="@+id/checkBox_Custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Custom Digital Design" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Design Change:" />
+
+                    <EditText
+                        android:id="@+id/QuiltingDesignChange"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="sq in"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Custom Borders:" />
+
+                    <EditText
+                        android:id="@+id/QuiltingCustomBorders"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="sq in"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="120dp"
+                        android:layout_height="wrap_content"
+                        android:gravity="right"
+                        android:text="Bobbins:" />
+
+                    <EditText
+                        android:id="@+id/QuiltingBobbins"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:ems="10"
+                        android:hint="sq in"
+                        android:inputType="number" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/finishingTouches"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Finishing Touches:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/finishingTouches_CreateBinding"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Create Bidning" />
+                <CheckBox
+                    android:id="@+id/finishingTouches_BindingAttachment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Binding Attachment" />
+                <CheckBox
+                    android:id="@+id/finishingTouches_MiteredCorners"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Mitered Corners" />
+                <CheckBox
+                    android:id="@+id/finishingTouches_BindingMachineFinished"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Binding: Machine Finished" />
+                <CheckBox
+                    android:id="@+id/finishingTouches_BindingHandFinished"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Binding: Hand Finished" />
+                <CheckBox
+                    android:id="@+id/finishingTouches_Pressing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Pressing" />
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
