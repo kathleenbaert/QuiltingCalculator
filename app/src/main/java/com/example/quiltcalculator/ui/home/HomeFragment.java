@@ -14,6 +14,7 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProviders;
 
 import com.example.quiltcalculator.R;
+import com.example.quiltcalculator.utilities.CalculateQuote;
 
 public class HomeFragment extends Fragment {
 
@@ -46,6 +47,14 @@ public class HomeFragment extends Fragment {
             }
         });
 
+
+        Button calculateQuoteButton = (Button) root.findViewById(R.id.CalculateQuoteButton);
+        calculateQuoteButton.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                handleCalculateQuote(root);
+            }
+        });
+
         return root;
     }
 
@@ -65,5 +74,12 @@ public class HomeFragment extends Fragment {
         calculatedDimensionTextValue = calculatedDimensionTextValue +" "+  quiltDimension;
 
         calculatedDimensionsTextView.setText(calculatedDimensionTextValue);
+    }
+
+    public static void handleCalculateQuote(View v){
+        CalculateQuote cq = new CalculateQuote();
+
+
+
     }
 }
