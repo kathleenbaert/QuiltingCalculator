@@ -310,8 +310,58 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Pressing" />
+
+                <TextView
+                    android:id="@+id/FinishingPurchases"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Finishing Purchases:"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <CheckBox
+                    android:id="@+id/FinishingPurchases_StandardBacking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Standard Backing" />
+
+                <CheckBox
+                    android:id="@+id/FinishingPurchases_PiecingBacking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Piecing Backing" />
+
+                <CheckBox
+                    android:id="@+id/FinishingPurchases_WideBacking"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Wide Backing" />
+
+                <CheckBox
+                    android:id="@+id/FinishingPurchases_PolyfillBatting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Polyfill Batting" />
+
+                <CheckBox
+                    android:id="@+id/FinishingPurchases_CottonBatting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cotton Batting" />
+
+                <CheckBox
+                    android:id="@+id/FinishingPurchases_CottonDreamBatting"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Cotton Dream Batting" />
+
+                <Button
+                    android:id="@+id/CalculateQuoteButton"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Calculate Quote" />
             </LinearLayout>
         </ScrollView>
     </RelativeLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
